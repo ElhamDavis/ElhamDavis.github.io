@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>การหายใจระดับเซลล์</title>
+<style>
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    margin: 0;
+    background-color: #f0fff4;
+}
+
+/* ===== แถบเมนูด้านบน ===== */
+.header {
+    background: linear-gradient(#B8DEA4, #27ae60);
+    padding: 15px;
+}
+
+/* จัดให้ปุ่มซ้ายสุด–ขวาสุด */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img {
+    width: 200px !important;
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav img:hover {
+    transform: scale(1.1);
+    filter: brightness(110%);
+}
+
+.center-title{
+    text-align:center;
+    font-size:24px;
+    color:#1e8449;
+    margin:15px;
+}
+
+/* ===== โครงเนื้อหา ===== */
+.content{
+    width:80%;
+    margin:auto;
+    border:2px solid #2ecc71;
+    padding:20px;
+    background:white;
+    border-radius:18px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.text-box{
+    width:48%;
+    line-height:1.6;
+}
+
+.img-box{
+    width:48%;
+    border:1px solid #27ae60;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:px;
+}
+
+.img-box img{
+    max-width:100%;
+    max-height:100%;
+    border-radius:10px;
+}
+	
+.cell-row2 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.cell-frame2 {
+    width: 40%;
+    border: 2px solid #2ecc71;
+    border-radius: 12px;
+    padding: 10px;
+    background: white;
+    text-align: center;
+}
+
+.cell-frame2 img {
+    width: 100%;
+    border-radius: 8px;
+}
+</style>
+</head>
+<body>
+
+<!-- ===== เมนูบน ปุ่มชิดซ้าย–ขวาสุด ===== -->
+<div class="header">
+  <div class="nav">
+
+    <!-- ปุ่มซ้ายสุด -->
+    <a href="index.html">
+      <img src="img1/left.png" alt="ย้อนกลับ">
+    </a>
+
+    <!-- ไอคอนการหายใจระดับเซลล์ตรงกลาง -->
+    <a href="cell.html">
+      <img src="img1/cell2.png" alt="การหายใจระดับเซลล์">
+    </a>
+
+    <!-- ปุ่มขวาสุด -->
+    <a href="video.html">
+      <img src="img1/right.png" alt="ถัดไป">
+    </a>
+
+  </div>
+</div>
+
+<div class="center-title">การหายใจระดับเซลล์ หรือการสลายสารอาหารระดับเซลล์</div>
+<div class="center-title">(Cellular Respiration)</div>
+
+<div class="content">
+
+  <!-- แถวที่ 1 -->
+  <div class="row">
+    <div class="text-box">
+      <h3>Cellular Respiration</h3>
+      การหายใจระดับเซลล์ทำให้มีการปลดปล่อยพลังงานออกมาจากโมเลกุลของสาร โดยพลังงานจะเก็บไว้ใน <br> 1.พันธะเคมีในรูปของ ATP <br> 2.โคเอนไซม์ในรูป NaOH และ FADH2
+    </div>
+
+    <div class="img-box">
+      <img src="img1/cellular_respiration.png" alt="รูปประกอบ">
+    </div>
+  </div>
+
+  <!-- แถวที่ 2 -->
+  <div class="row">
+    <div class="img-box">
+      <img src="img1/CA.png" alt="รูปประกอบ">
+    </div>
+	<br>
+<div class="text-box">
+      <h3>กระบวนการและปฏิกิริยาที่ควรรู้ !</h3>
+		<h4>กระบวนการ</h4> 1.แคทาบอลิซึม (Catabolism) เป็นกระบวนการสลายสารจากสารโมเลกุลใหญ่เป็นสารโมเลกุลเล็ก เช่น การสลายอาหารภายในเซลล์เป็นต้น <br>
+		2.แอนาบอลิซึม (Anabolism) กระบวนการสร้างหรือสังเคราะห์สารจากสารโมเลกุลเล็กให้เป็นสารโมเลกุลใหญ่ เช่น การสังเคราะห์ด้วยแสง การสังเคราะห์โปรตีน เป็นต้น <br>โดยเมื่อกระบวนการทั้้งสองมารวมกันเราจะเรียกว่า เมทาบอลิซึม (Metabolism)<br><br>
+    </div>
+  </div>
+	
+	<div class="row">
+    <div class="img-box">
+      <img src="img1/metabolism.png" alt="รูปประกอบ">
+    </div>
+	 </div>
+	<p>&nbsp;</p>
+	<div class="row">
+    <div class="img-box">
+      <img src="img1/Redox.png" alt="รูปประกอบ">
+    </div>
+
+<div class="text-box">
+		<h4>ปฏิกิริยา</h4>1.ปฏิกิริยาออกซิเดชัน (Oxidation Reaction) เป็นปฏิกิริยาที่สารมีการจ่ายอิเล็กตรอนออกไป มักเป็นปฏิกิริยาการสลายสารหรือแคทาบอลิซึม<br>2.ปฏิกิริยารีดักชัน (Reduction Reaction) เป็นปฏิกิริยาที่สารมีการรับอิเล็กตรอนเข้ามา มักเป็นปฏิกิริยาการสร้างสารหรือแอนาบอลิซึม
+		<h4>ปฏิกิริยาที่เกี่ยวข้องกับการรับและจ่ายอิเล็กตรอนนี้จะเรียกรวมกันว่า Oxido-reduction หรือปฏิกิริยารีดอกซ์ (Redox Reaction)</h4>
+    </div>
+  </div>
+	
+<div class="row">
+    <div class="text-box">
+      <h3>สิ่งที่ควรรู้ก่อนเข้าเนื้อหา</h3>
+     <h4>ATP (Adenosine Triphosphate)</h4> เป็นสารพลังงานสูงที่เก็บพลังงานไว้ในพันธะโมเลกุลของ ATP ประกอบด้วยน้ำตาลไรโบส เบสอะดีนีน และหมู่ฟออสเฟต 3 โมเลกุล <br> พันธะที่เชื่อมระหว่างหมู่ฟอสเฟตมี 2 พันธะ เรียกว่า Phosphoanhydride Bond  เป็นพันธะที่เก็บพลังงานไว้มากเมื่อพันธะดังกล่าวถูกสลายด้วยน้ำในปฏิกิริยาไฮโดรไลซิส จะปลดปล่อยพลังงานออกมา 7.3 Kcal/mol <h3>ADP-ATP Cycle</h3>
+     ส่วนใหญ่เซลล์จะมีการสลาย ATP เป็น ADP และ ADP จะจับกับหมู่ฟอสเฟต ได้เป็น ATP วนเป็นวัฏจักรไป ซึ่งกระบวนการสร้าง ATP จาก ADP และหมู่ฟอสเฟตอิสระ (Inorganic Phosphate; P) เรียกว่า Phosphorylation
+    </div>
+
+    <div class="img-box">
+      <img src="img1/ATP.png" alt="รูปประกอบ">
+    </div>
+  </div>
+	
+
+<div class="row">
+    <div class="img-box">
+      <img src="img1/ATP2.png" alt="รูปประกอบ">
+    </div>
+
+<div class="text-box">
+		<h4> Substrate-level Phosphorylation และ Oxidative Phosphorylation</h4>Substrate-level Phosphorylation เป็นกาารเคลื่อนย้ายหมู่ฟอสเฟตจากสารอื่นๆ มาเติมให้กับโมเลกุลของ ADP โดยตรง พบได้ในเซลล์ เช่น ไกลโคไลซิส วัฏจักรเครปส์ <br><br>Oxidative Phosphorylation เป็นการเติมหมู่ฟอสเฟตให้โมเลกุลของ ADP โดยเกิดปฏิกิริยาออกซิเดชันควบคู่ไปพร้อมกันด้วย พบได้ในเซลล์ เช่น การถ่ายทอดอิเล็กตรอน (ETC)
+    </div>
+  </div>
+	
+	<div class="cell-row2">
+    <div class="img-box">
+      <img src="img1/mitochondrion.png" alt="รูปประกอบ">
+    </div>
+	 </div>
+	
+<div class="cell-row2 ">
+    <div class="text-box">
+      <h3>การหายใจระดับเซลล์</h3>
+     <h4>1.Aerobic Cellular Respiration</h4> การสลายอาหารแบบใช้ออกซิเจน ออกซิเจนเป็นตัวรับอิเล็กตรอนตัวสุดท้ายในกระบวนการ ETC และได้ ATP มากกว่า
+    </div>
+  </div>
+
+<div class="cell-row2">
+  <div class="text-box">
+     <h4>2.Anaerobic Cellular Respiration</h4> 
+     <p> การสลายอาหารแบบไม่ใช้ออกซิเจน เรียกว่า การหมัก (Fermentation) เกิในสภาวะที่ไม่มีออกซิเจนจะได้ ATP น้อยกว่า<br>
+     </p>
+     <p>&nbsp;</p>
+  </div>
+  </div>
+	
+<div class="row">
+    <div class="img-box">
+      <img src="img1/ACR2.png" alt="รูปประกอบ">
+    </div>
+
+<div class="text-box">
+		<h4> การหายใจแบบใช้ออกซิเจน มี 4 ขั้นตอนดังนี้ </h4>1. ไกลโคไลซิส (Glycolysis) โดยจะเกิดใน Cytosol <br>2. การสร้างอะซีทิล โคเอนไซม์ เอ (Acetyl Coenzyme A Formation)<br>3. วัฏจักรเครปส์ (Krebs Cycle)<br>4. การถ่ายทอดอิเล็กตรอน (Electron Transport Chain; ETC)<br>โดยขั้นตอนที่ 2 ถึง 4 จะเกิดใน Mitochondria
+    </div>
+  </div>
+	
+<div class="row">
+    <div class="img-box">
+      <img src="img1/Glycolysis.png" alt="รูปประกอบ">
+    </div>
+
+<div class="text-box">
+		<h4> Glycolysis </h4>-ไกลโคไลซิส เป็นกระบวนการสลายกลูโคสที่พบได้ในสิ่งมีชีวิตเกือบทุกชนิด เกิดขึ้นในไซโทซอล<br>-เปลี่ยนโมเลกุลของน้ำตาลกลูโคสที่มีคาร์บอน 6 อะตอม ให้เป็นสารประกอบคาร์บอน 3 อะตอม ชื่อว่า ไพรูเวต (Pyruvate)<br>-ในระหว่างขั้นตอนการเปลี่ยนแปลงจะมีการปลดปล่อยพลังงานออกมา ซึ่งพลังงานเหล่านี้จะถูกเก็บไว้ในรูปของ ATP และ NADH<br><h4>ไกลโคไลซิสประกอบไปด้วย 10 ปฏิกิริยาย่อย แบ่งเป็นช่วงลงทุน(Preparatory Phase)และช่วงคืนกำไร(Payoff Phase)</h4> โดยหากให้สรุปคือ ในขั้นตอนไกลโคไลซิส กลูโคสจะถูฏเปลี่ยนเป็นกรดไพรูวิก จำนวน 2 โมเลกุลและถูกนำเข้าสู่ไมโทคอนเดรียแล้วเข้าสู่ขั้นตอนการสร้าง Acetyl Coenzyme A ต่อไป
+    </div>
+  </div>
+
+	<div class="row">
+    <div class="img-box">
+      <img src="img1/Acetyl CoA.png" alt="รูปประกอบ">
+    </div>
+
+<div class="text-box">
+		<h4> Acetyl CoA Formation </h4>การสร้าง Acetyl CoA จะเกิดขึ้นในเมทริกซ์ของไมโทคอนเดรีย Acetyl Coenzyme A นี้จะเป็นสารตั้งต้นสำหรับวัฏจักรเครปส์ต่อไป โดยกรดไพรูวิก 2 โมเลกุลถูกนำเข้าสู่ไมโทคอนเดรียและเข้าสู่กระบวนการสร้าง Acetyl Coenzyme A 2 โมเลกุล
+    </div>
+  </div>
+	
+<div class="row">
+    <div class="img-box">
+      <img src="img1/Krebs.png" alt="รูปประกอบ">
+    </div>
+
+<div class="text-box">
+		<h4> Krebs Cycle </h4>-อาจเรียกได้อีกชื่อหนึ่งว่า Tricarboxylic Cycle (TCA Cycle)<br>-ค้นพบโดย Hans Krebs<br>-อาศัยการเร่งปฏิกิริยาของเอนไซม์ต่างๆ เกิดต่อเนื่องกันเป็นวงจร จนสุดท้ายถูกสลายเป็นแก๊สคาร์บอนไดออกไซด์<br>-วัฏจักรเครปส์เปรียบเสมือนจุดศูนย์กลางของการเมทาบอลิซึมของสาร<br>-วัฏจักรเครปส์มีทั้งหมด 8 ปฏิกิริยาย่อย สารตั้งต้นคือ Acetyl Coenzyme A และ Oxaloacetate (OAA)<br><h4>โดยที่ Acetyl Coenzyme A 1 โมเลกุลรวมตัวกับ Oxaloacetate เป็น Citrate และถูกสลายอย่างสมบูรณ์ ได้เป็นพลังงานในรูปของ ATP และตัวขนส่งอิเล็กตรอนต่างๆ ตัวขนส่งอิเล็กตรอนทั้งหมดจะถูกนำไปสร้างเป็นพลังงานต่อไป</h4>
+    </div>
+  </div>
+	
+	<div class="cell-row2">
+    <div class="img-box">
+      <img src="img1/saroob.png" alt="รูปประกอบ">
+    </div>
+	 </div>
+	
+	<p>&nbsp;</p>
+	
+ <div class="row">
+    <div class="img-box">
+      <img src="img1/mitro.png" alt="รูปประกอบ">
+    </div>
+	 
+
+<div class="text-box">
+		<h4> Electron Transport Chain (ETC) </h4>การถ่ายทอดอิเล็กตรอนเกิดขึ้นในเยื่อหุ้มชั้นในและช่องว่างระหว่างเยื่อหุ้มของไมโทคอนเดรีย ค้นพบโดย Albert L. Lehninger<br>-เป็นการนำตัวขนส่งอิเล็กตรอน(NADH และ FADH2)มาเปลี่ยนให้อยู่ในรูปของสารพลังงานสูง (ATP)<br><br>บนเยื่อหุ้มชั้นในของไมโทคอนเดรียจะมีกลุ่มของโปรตีนที่ฝังตัวอยู่เรียกว่า คอมเพล็กซ์ (Complex) ซึ่งมี 4 คอมเพล็กซ์ ได้แก่ <br>1. Complex I: NADH: Ubiquinone Oxidoreductase หรือ NADH Dehydrogenase<br>2. Complex II: Succinate Dehydrogenase<br>3. Complex III: Cytochrome Complex หรือ Cytochrome c Oxidoreductase<br>4. Complex IV: Cytochrome Oxidase<h4>นอกจากนี้ยังมี Complex V: ATP Synthase ทำหน้าที่สร้าง ATP</h4>
+    </div>
+  </div>
+	
+ <div class="row">
+    <div class="text-box">
+      <h3>การถ่ายทอดอิเล็กตรอน (ETC)</h3>
+      1. ตัวขนส่งอิเล็กตรอน NADH และ FADH2 ที่ได้จากกระบวนการไกลโคไลซิส การสร้าง Acetyl Coenzyme A และวัฏจักรเครปส์จ่ายอิเล็กตรอนให้คอมเพล็กซ์ต่าง ๆ <br>2. หลังจากนั้นอิเล็กตรอนจะถูกถ่ายทอดระหว่างคอมเพล็กซ์ไปเรื่อย ๆ ซึ่งในระหว่างที่อิเล็กตรอนเคลื่อนที่ จะมีการปลดปล่อยพลังงานออกมาทีละน้อย<br>3. พลังงานเหล่านั้นจะถูกส่งให้คอมเพล็กซ์ต่าง ๆ นำไปใช้ในการปั๊มโปรตอนจาก Matrix เข้าสู่ช่องว่างระหว่างเยื่อหุ้มของไมโทคอนเดรีย <br> 4. เมื่ออิเล็กตรอนปลดปล่อยพลังงานออกจนหมด อิเล็กตรอนจะหลุดออกจากคอมเพล็กซ์ และมีโมเลกุลของออกซิเจนมารับอิเล็กตรอนนั้น กลายเป็นโมเลกุลน้ำ (H2O)
+    </div>
+
+    <div class="img-box">
+      <img src="img1/ETC2.png" alt="รูปประกอบ">
+    </div>
+  </div>
+	
+<div class="row">
+    <div class="text-box">
+     <p>&nbsp;</p>
+    เมื่อมีการปั๊มโปรตอนจาก Matrix มาก ๆ จะทำให้เกิดความแตกต่างของ H ใน 2 บริเวณ คือ มี H ในช่องว่างระหว่างเยื่อหุ้มมากกว่าใน Matrix เกิดแรงที่ผลักให้ H ต้องการลำเลียงกลับมายัง Matrix เรียกแรงนั้นว่า แรงขับเคลื่อนโปรตอน (Proton Motive Force) ทำให้ H ต้องการลำเลียงกลับมายัง Matrix โดย H จะถูกลำเลียงผ่าน ATP Synthase เมื่อ H เคลื่อนที่ผ่าน ATP Synthase จะเกิดแรงหมุนซึ่งเป็นพลังงานที่สามารถนำไปสร้าง ATP ได้ , การเคลื่อนที่ของ H ผ่านเยื่อหุ้ม ตามความเข้มข้นของสารแบบนี้เรียกว่า Chemiosmosis การจ่ายอิเล็กตรอนของ NADH และ FADH2 แล้วทำให้เกิดการสร้าง ATP ควบคู่กัน จัดเป็นการสร้าง ATP แบบ Oxidative Phosphorylation , NADH จะจ่ายอิเล็กตรอนที่ Complex I ส่วน FADH2 จ่ายอิเล็กตรอนที่ Complex II ดังนั้น NADH จึงสามารถปั๊มโปรตอนเข้าสู่ช่องว่างระหว่างเยื่อหุ้มได้มากกว่า ทำให้สร้าง ATP ได้มากกว่า<br><h4>สรุปก็คือ NADH และ FADH2 จ่ายอิเล็กตรอน ปั๊มโปรตอนจาก Matrix เข้าสู่ช่องว่างระหว่างเยื่อหุ้มมีออกซิเจนเป็นตัวรับอิเล็กตรอนตัวสุดท้าย กลายเป็นน้ำและโปรตอนถูกลำเลียงผ่าน ATP Synthase สร้าง ATP</h4> </div>
+
+    <div class="img-box">
+      <img src="img1/ETC3.png" alt="รูปประกอบ">
+    </div>
+  </div>
+	
+<div class="row">
+    <div class="img-box">
+      <img src="img1/CTAA.png" alt="รูปประกอบ">
+    </div>
+	 
+
+<div class="text-box">
+		<h4> Catabolism of Amino Acids </h4>- กรดอะมิโนทุกชนิดจะถูกตัดหมู่อะมิโน (NH2) แล้วเข้าสู่กระบวนการสลายต่อไป <br>- หมู่แอนิโมที่กำจัดออกจะนำไปสังเคราะห์เป็นยูเรีย เพื่อนำเข้าสู่วัฏจักรยูเรีย (Urea Cycle) แล้วขับออกสู่ภายนอกร่างกาย <h4>กรดอะมิโนมีหลายชนิด ทุกชนิดสามารถเปลี่ยนเป็น Pyruvate, Acetyl CoA และสารตัวกลางในวัฏจักรเครปส์ได้</h4>
+    </div>
+  </div>
+
+<div class="row">
+    <div class="text-box">
+      <h3>การสลายไขมัน (Catabolism of Lipids)</h3>
+      - ลิพิดจะถูกย่อยในทางเดินอาหารได้เป็นกรดไขมัน (Fatty Acid) และกลีเซอรอล (Glycerol)<br>- กลีเซอรอลจะถูกเปลี่ยนเป็นสารในไกลโคไลซิส ส่วนกรดไขมันจะถูกเปลี่ยนเป็น Acetyl CoA <h4>กล่าวก็คือ Catabolism of Amino Acids & Lipids กรดอะมิโนจะถูกตัดหมู่อะมิโนออกและเปลี่ยนเป็น Pyruvate, Acetyl CoA หรือสารตัวกลางในวัฎจักรเครปส์  กลีเซอรอลจะถูกเปลี่ยนเป็นสารในไกลโคไลซิสส่วนกรดไขมันจะถูกเปลี่ยนเป็น Acetyl CoA </h4>
+    </div>
+
+    <div class="img-box">
+      <img src="img1/CTL.PNG" alt="รูปประกอบ">
+    </div>
+  </div>
+	
+<div class="row">
+    <div class="img-box">
+      <img src="img1/An.png" alt="รูปประกอบ">
+    </div>
+	 
+
+<div class="text-box">
+		<h4> การหายใจแบบไม่ใช้ออกซิเจนมี 2 ขั้นตอน ดังนี้ </h4>1. ไกลโคไลซิส (Glycolysis) <br> 2. การหมัก (Fermentation) <br>2.1 การหมักกรดแลกติก (Lactic Acid Fermentation) <br>2.2 การหมักแอลกอฮอล์ (Alcohol Fermentation)<br><h4>ซึ่งทั้งหมดที่กล่าวมานั้นเกิดขึ้นใน Cytosol</h4>
+    </div>
+  </div>
+	
+<div class="row">
+    <div class="img-box">
+      <img src="img1/Fermentation.png" alt="รูปประกอบ">
+    </div>
+	 
+
+<div class="text-box">
+		<h4> การหมัก (Fermentation) </h4>- พบในแบคทีเรียบางชนิด เช่น ยีสต์ แบคทีเรียใต้ทะเลลึก แบคทีเรียในทางเดินอาหาร <br> - พบในเซลล์กล้ามเนื้อของมนุษย์ในสภาวะที่ออกซิเจนไม่เพียงพอ เช่น การออกกำลังกายอย่างหนัก
+    </div>
+  </div>
+	
+<div class="row">
+    <div class="img-box">
+      <img src="img1/LAF.png" alt="รูปประกอบ">
+    </div>
+	 
+
+<div class="text-box">
+		<h4> Lactic Acid Fermentation (พบในแบคทีเรียกล้ามเนื้อโครงร่าง) </h4>1. กลูโคสจะเข้าสู่กระบวนการไกลโคไลซิสเปลี่ยนเป็นไพรูเวต แล้วเข้าสู่กระบวนการหมักกรดแลกติก คือ ไพรูเวตจะถูกเปลี่ยนเป็น Lactate หรือ Lactic Acid <br> 2. การเปลี่ยนไพรูเวต 1 โมเลกุล ให้เป็น Lactic Acid 1 โมเลกุล จะใช้ 1 NADH ซึ่งได้ผลิตภัณฑ์เป็น NAD เพื่อนำไปหมุนเวียนในกระบวนการไกลโคไลซิสต่อไป <h4>Lactic Acid จะถูกลำเลียงไปที่ตับเพื่อเปลี่ยนเป็นกลูโคสแล้วนำไปใช้ต่อ</h4>
+    </div>
+  </div>
+	
+<div class="row">
+    <div class="img-box">
+      <img src="img1/AF.png" alt="รูปประกอบ">
+    </div>
+	 
+
+<div class="text-box">
+		<h4> Alcohol Fermentation (พบในยีสต์ พืช แบคทีเรียบางชนิด) </h4>1. เมื่ออยู่ในสภาวะที่ไม่มีออกซิเจน กลูโคสจะเข้าสู่กระบวนการไกลโคไลซิส ถูกเปลี่ยนเป็นไพรูเวต <br> 2. ไพรูเวตเข้าสู่กระบวนการหมักแอลกอฮอล์ คือ ไพรูเวตจะถูกเปลี่ยนเป็น Acetaldehyde ได้ CO2 1 โมเลกุล หลังจากนั้น Acetaldehyde จะถูกเปลี่ยนเป็นเอทานอล (Ethanol) โดยใช้ 1 NADH และได้ผลิตภัณฑ์เป็น NAD เพื่อนำไปหมุนเวียนในกระบวนการไกลโคไลซิสเช่นเดียวกัน <h4>Lactic Acid จะถูกลำเลียงไปที่ตับเพื่อเปลี่ยนเป็นกลูโคสแล้วนำไปใช้ต่อ</h4>
+    </div>
+  </div>
+	
+	<div class="cell-row2">
+    <div class="img-box">
+      <img src="img1/saroob2.png" alt="รูปประกอบ">
+    </div>
+	 </div>
+	
+</div>
+
+</body>
+</html>
